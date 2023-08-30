@@ -3,10 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7266156ec1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Khoa Pham</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="nav">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="navbar">
+                <li><a href="#" class="active">Trang chủ</a></li>
+                <li class="course">
+                    <a href="#" class="active kh" onclick="toggleClick()">Khóa học <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="nav-hide">
+                        <ul class="sub-list">
+                            <li>PHP</li>
+                            <li>Java</li>
+                            <li>Ios</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#" class="active">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="main-box">
+                <div class="introduce">
+                    <h2>KHOA PHẠM ONLINE</h2>
+                    <p>Trang học tập lập trình phi lợi nhuận. Bạn sẽ phải ngạc nhiên vì mặc dù miễn phí nhưng chất hơn cả có phí</p>
+                </div>
+                <div class="search">
+                    <div class="input-search">
+                        <input type="text" placeholder="PHP?">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </div>
+                    <div class="three-box">
+                        <div class="box">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                            <p>Nội dung học tập cập nhật liên tục theo yêu cầu của người học</p>
+                        </div>
+                        <div class="box">
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                            <p>Livecode miễn phí giao lưu cùng người học tối hai, tư, sáu hàng tuần</p>
+                        </div>
+                        <div class="box">
+                            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                            <p>Miễn phí 100%, do chính giảng viên tại Khoa Phạm xây dựng bài học</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
