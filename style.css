@@ -172,9 +172,6 @@
     display: none;
     cursor: pointer;
 }
-.seen{
-    display: none !important;
-}
    @media screen and (max-width : 	768px) {
     .checkbtn i{
         display: block;
@@ -236,5 +233,8 @@
     }
     .nav .navbar li {
         width: 100%;
+    }
+    .seen{
+        display: none !important;
     }
    }
